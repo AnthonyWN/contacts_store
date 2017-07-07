@@ -1,0 +1,25 @@
+{
+  "name": "contacts_store",
+  "version": "1.0.0",
+  "description": "This is a MEAN Stack application to to store contact information",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnthonyWN/contacts_store.git"
+  },
+  "author": "Tony",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnthonyWN/contacts_store/issues"
+  },
+  "homepage": "https://github.com/AnthonyWN/contacts_store#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.1"
+  }
+}
