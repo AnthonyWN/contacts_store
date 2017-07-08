@@ -7,8 +7,13 @@ var app = express();
 var port = 3100;
 
 //connect to database
-mongoose.connect('mongodb://localhost:27017/contacts', function(err){
-  console.log(err);
+mongoose.connect('mongodb://localhost:27017/contacts',{useMongoClient: true}, function(err){
+  if(err){
+    console.log(err);
+  }else{
+    console.log("db connected");
+  }
+
 });
 var db = mongoose.connection;
 
