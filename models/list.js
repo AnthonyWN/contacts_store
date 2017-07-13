@@ -1,4 +1,15 @@
 var mongoose = require('mongoose');
+//connect to database
+mongoose.connect('mongodb://localhost:27017/contacts',{useMongoClient: true}, function(err){
+  if(err){
+    console.log(err);
+  }else{
+    console.log("db connected-contacts");
+  }
+
+});
+var db = mongoose.connection;
+
 var Schema = mongoose.Schema;
 
 var contactInfo = new Schema({

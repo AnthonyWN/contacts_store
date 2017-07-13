@@ -30,9 +30,10 @@ router.post('/add_contacts', function(req, res){
 });
 
 router.delete('/:id', function(req, res){
-  contact.removeCont(id, function(err){
+  contact.removeCont(req.params.id, function(err){
     if(err) throw err;
   });
 });
+
 
 module.exports = router;
